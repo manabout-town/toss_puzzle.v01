@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
+    "test:engine": "node scripts/engine-sanity.mjs",
     "supabase:types": "supabase gen types typescript --linked > src/types/database.ts",
     "supabase:reset": "supabase db reset",
     "supabase:push": "supabase db push",
