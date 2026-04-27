@@ -1,0 +1,52 @@
+{
+  "name": "tosspuzzle",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Toss Puzzle - 앱인토스 미니앱용 풀스택 퍼즐 게임",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "supabase:types": "supabase gen types typescript --linked > src/types/database.ts",
+    "supabase:reset": "supabase db reset",
+    "supabase:push": "supabase db push",
+    "cap:sync": "next build && cap sync",
+    "cap:ios": "cap open ios",
+    "cap:android": "cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/haptics": "^6.0.0",
+    "@capacitor/ios": "^6.0.0",
+    "@capacitor/preferences": "^6.0.0",
+    "@capacitor/status-bar": "^6.0.0",
+    "@supabase/ssr": "^0.5.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.0",
+    "howler": "^2.2.4",
+    "next": "14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.4.0",
+    "zod": "^3.23.8",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0",
+    "@types/howler": "^2.2.11",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8.4.39",
+    "supabase": "^1.187.0",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.5.0"
+  }
+}
